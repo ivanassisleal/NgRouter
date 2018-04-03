@@ -1,0 +1,10 @@
+<p>
+  <b>Persons List</b>
+</p>
+
+<ul>
+  <li *ngFor="let person of persons">
+      {{person.firstName}} <a [routerLink]="['/persons',person.id]">edit</a>
+  </li>
+</ul>
+
